@@ -15,6 +15,8 @@
 		4B7A85DE28F598C20055FEB5 /* _SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A85DD28F598C20055FEB5 /* _SongTests.swift */; };
 		4B7A85E828F598C20055FEB5 /* _SongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A85E728F598C20055FEB5 /* _SongUITests.swift */; };
 		4B7A85EA28F598C20055FEB5 /* _SongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A85E928F598C20055FEB5 /* _SongUITestsLaunchTests.swift */; };
+		4B7A85FC28F99E2D0055FEB5 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A85FB28F99E2D0055FEB5 /* APICall.swift */; };
+		4B7A860028FEB8A50055FEB5 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A85FF28FEB8A50055FEB5 /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4B7A85E328F598C20055FEB5 /* 7SongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7SongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7A85E728F598C20055FEB5 /* _SongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SongUITests.swift; sourceTree = "<group>"; };
 		4B7A85E928F598C20055FEB5 /* _SongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B7A85FB28F99E2D0055FEB5 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		4B7A85FF28FEB8A50055FEB5 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,9 @@
 		4B7A85C528F598C10055FEB5 /* 7Song */ = {
 			isa = PBXGroup;
 			children = (
-				4B7A85C628F598C10055FEB5 /* AppDelegate.swift */,
-				4B7A85C828F598C10055FEB5 /* SceneDelegate.swift */,
-				4B7A85CA28F598C10055FEB5 /* ViewController.swift */,
-				4B7A85CF28F598C20055FEB5 /* Assets.xcassets */,
-				4B7A85D128F598C20055FEB5 /* LaunchScreen.storyboard */,
+				4B7A85F728F99D7D0055FEB5 /* Application */,
+				4B7A85F828F99D990055FEB5 /* Resource */,
+				4B7A85F928F99DF20055FEB5 /* Source */,
 				4B7A85D428F598C20055FEB5 /* Info.plist */,
 			);
 			path = 7Song;
@@ -124,6 +126,74 @@
 			path = 7SongUITests;
 			sourceTree = "<group>";
 		};
+		4B7A85F728F99D7D0055FEB5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85C628F598C10055FEB5 /* AppDelegate.swift */,
+				4B7A85C828F598C10055FEB5 /* SceneDelegate.swift */,
+				4B7A85D128F598C20055FEB5 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4B7A85F828F99D990055FEB5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85CF28F598C20055FEB5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4B7A85F928F99DF20055FEB5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85FA28F99E170055FEB5 /* Service */,
+				4B7A85FE28FEB88A0055FEB5 /* Model */,
+				4B7A860128FEE8CA0055FEB5 /* MainScreen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4B7A85FA28F99E170055FEB5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85FB28F99E2D0055FEB5 /* APICall.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B7A85FE28FEB88A0055FEB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85FF28FEB8A50055FEB5 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B7A860128FEE8CA0055FEB5 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A860228FEEDFF0055FEB5 /* View */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		4B7A860228FEEDFF0055FEB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A860328FEEE100055FEB5 /* Components */,
+				4B7A85CA28F598C10055FEB5 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B7A860328FEEE100055FEB5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +204,7 @@
 				4B7A85BF28F598C10055FEB5 /* Sources */,
 				4B7A85C028F598C10055FEB5 /* Frameworks */,
 				4B7A85C128F598C10055FEB5 /* Resources */,
+				4B7A85FD28F99F0E0055FEB5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,13 +320,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B7A85FD28F99F0E0055FEB5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B7A85BF28F598C10055FEB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B7A85CB28F598C10055FEB5 /* ViewController.swift in Sources */,
+				4B7A860028FEB8A50055FEB5 /* AlbumModel.swift in Sources */,
 				4B7A85C728F598C10055FEB5 /* AppDelegate.swift in Sources */,
+				4B7A85FC28F99E2D0055FEB5 /* APICall.swift in Sources */,
 				4B7A85C928F598C10055FEB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +523,6 @@
 				INFOPLIST_FILE = 7Song/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -459,7 +551,6 @@
 				INFOPLIST_FILE = 7Song/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

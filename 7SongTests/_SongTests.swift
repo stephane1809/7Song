@@ -8,7 +8,7 @@
 import XCTest
 @testable import _Song
 
-final class _SongTests: XCTestCase {
+final class SongTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
