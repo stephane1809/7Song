@@ -25,7 +25,9 @@ struct TrackModel: Codable {
 
 struct DataModel: Codable {
     let title: String
-    init(title: String) {
+    let id: Int
+    init(title: String, id: Int) {
         self.title = title
+        self.id = id
     }
 }

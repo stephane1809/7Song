@@ -25,4 +25,3 @@ final class APICall {
     }
 }
 
-//String(data: data, encoding: .utf8)
