@@ -112,7 +112,7 @@
 		4B7A85DC28F598C20055FEB5 /* 7SongTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B7A85DD28F598C20055FEB5 /* _SongTests.swift */,
+				4B7A8604290066980055FEB5 /* ModelTests */,
 			);
 			path = 7SongTests;
 			sourceTree = "<group>";
@@ -149,7 +149,8 @@
 			children = (
 				4B7A85FA28F99E170055FEB5 /* Service */,
 				4B7A85FE28FEB88A0055FEB5 /* Model */,
-				4B7A860128FEE8CA0055FEB5 /* MainScreen */,
+				4B7A860228FEEDFF0055FEB5 /* View */,
+				4B7A8605290227490055FEB5 /* Controller */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -170,28 +171,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4B7A860128FEE8CA0055FEB5 /* MainScreen */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A860228FEEDFF0055FEB5 /* View */,
-			);
-			path = MainScreen;
-			sourceTree = "<group>";
-		};
 		4B7A860228FEEDFF0055FEB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B7A860328FEEE100055FEB5 /* Components */,
-				4B7A85CA28F598C10055FEB5 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		4B7A860328FEEE100055FEB5 /* Components */ = {
+		4B7A8604290066980055FEB5 /* ModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B7A85DD28F598C20055FEB5 /* _SongTests.swift */,
 			);
-			path = Components;
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		4B7A8605290227490055FEB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A85CA28F598C10055FEB5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
