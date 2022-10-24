@@ -10,24 +10,30 @@ import UIKit
 struct AlbumModel: Codable {
     let id: Int
     let title: String
-    let tracks: TrackModel
+    let tracks: TracksModel
 
-    init(id: Int, title: String, tracks: TrackModel) {
+    init(id: Int, title: String, tracks: TracksModel) {
         self.id = id
         self.title = title
         self.tracks = tracks
     }
 }
 
-struct TrackModel: Codable {
+struct TracksModel: Codable, Equatable {
     let data: [DataModel]
+
+    init(data: [DataModel]) {
+        self.data = data
+    }
 }
 
-struct DataModel: Codable {
+struct DataModel: Codable, Equatable {
     let title: String
     let id: Int
-    init(title: String, id: Int) {
+    let link: String
+    init(title: String, id: Int, link: String) {
         self.title = title
         self.id = id
+        self.link = link
     }
 }
